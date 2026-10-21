@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <math.h>
+#include <cmath>
 
 using namespace std;
 
@@ -248,10 +249,135 @@ int main()
     }*/
 
     // Zadanie 13
-    int ocena;
+    /*int ocena;
     cout << "Podaj ocene: ";
     cin >> ocena;
+    switch (ocena) {
+        case 1:
+            cout << "ocena niedostateczna" << endl;
+            break;
+        case 2:
+            cout << "ocena dopuszczajaca" << endl;
+            break;
+        case 3:
+            cout << "ocena dostateczna" << endl;
+            break;
+        case 4:
+            cout << "ocena dobra" << endl;
+            break;
+        case 5:
+            cout << "ocena bardzo dobra" << endl;
+            break;
+        default:
+            cout << "Podales zla ocene" << endl;
+            break;
+    }*/
 
+    // Zadanie 14
+    /*int sum = 0;
+    for (int i = 1; i <= 100; i++) {
+        if (i % 3 == 0) continue;
+
+        sum += i;
+    }
+
+    cout << sum << endl;*/
+
+    // Zadanie 15
+    /*int i = 7;
+    while (true) {
+        if (i > 50) break;
+        i += 7;
+    }*/
+
+    // Zadanie 16
+    /*for (int i = 1; i <= 9; i++) {
+        for (int j = 1; j <= 9; j++) {
+            int wynik = i * j;
+            if (wynik < 10) {
+                cout << "  " << wynik;
+            } else {
+                cout << " " << wynik;
+            }
+        }
+        cout << endl;
+    }*/
+
+    // Zadanie 17
+    /*int num, i = 0;
+    cout << "Podaj liczbe: ";
+    cin >> num;
+
+    while (num > 0) {
+        num /= 10;
+        i++;
+    }
+    cout << i;*/
+
+    // Zadanie 18
+    /*int n;
+    cout << "Podaj liczbe: ";
+    cin >> n;
+
+    bool prime = true;
+
+    if (n < 2) {
+        prime = false;
+    } else {
+        for (int i = 2; i <= sqrt(n); i++) {
+            if (n % 2 == 0) {
+                prime = false;
+                break;
+            }
+        }
+    }
+
+    if (prime) {
+        cout << "Liczba " << n << " jest pierwsza";
+    } else {
+        cout << "Liczba " << n << " nie jest pierwsza";
+    }*/
+
+    // Zadanie 19
+    /*int opcja;
+    bool kontynuuj = true;
+    
+    while (kontynuuj) {
+        cout << "1 - wyświetlenie komunikatu Start" << endl;
+        cout << "2 - wyświetlenie komunikatu Ustawienia" << endl;
+        cout << "3 - wyświetlenie komunikatu Pomoc" << endl;
+        cout << "4 - wyświetlenie komunikatu Koniec" << endl;
+        cout << "Wybierz opcje z menu: ";
+        cin >> opcja;
+        switch (opcja) {
+        case 1:
+            cout << "Start" << endl;
+            break;
+        case 2:
+            cout << "Ustawienia" << endl;
+            break;
+        case 3:
+            cout << "Pomoc" << endl;
+            break;
+        case 4:
+            cout << "Koniec" << endl;
+            kontynuuj = false;
+            break;
+        default:
+            cout << "Podano zla opcje" << endl;
+            break;
+        }
+    }*/
+
+    // Zadanie 20
+    /*double s = 0, prog = 10.0;
+    int it = 0;
+    while (s < prog) {
+        s += 0.1;
+        cout << "s: " << s << endl;
+        it++;
+    }
+    cout << "Koncowa suma: " << s << "\nIlosc iteracji: " << it << endl;*/
 
     return 0;
 }
